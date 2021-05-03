@@ -13,10 +13,15 @@
 	align-content: center;
 }
 
+.container1 {
+    background: skyblue;
+}
+
 .ct1-c1 {
     height:15vh;
     background: skyblue;
     width:50%;  
+    position: relative;
 }
 
 .ct1-c2 {
@@ -32,14 +37,23 @@
 }
 
 .ct1-c1 i {
-    font-size: 2rem;
+    font-size: 4rem;
     display: inline-block;    
     margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .ct1-c1 h1 {
     display: inline-block;
     font-size: 5vh;
+}
+
+.ct1-c1 .m-dropdown {
+  
+    text-align: center;
+    vertical-align: middle;
+
 }
 
 .ct1-c2 .fl {
@@ -213,4 +227,131 @@
 .container4 {
     padding:2rem 2rem;
     background: slateblue;
+}
+
+.m-dropdown {
+    width:30px;
+    height:30px;
+    background: white;
+}
+
+/* dopdown */
+
+.dropbtn {
+    background-color: white;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {    
+    display: inline-block;
+    display: inline-block;
+    position: absolute;
+    right:-7rem;
+    top:1.6rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+
+@media screen and (max-width:500px){
+    .ct1-c2 {
+        display:none;
+    } 
+
+    .ct1-c1 {
+        width:100%;
+        height:100%;
+        margin-right:25%;
+    }
+
+   .ct1-c1 i {
+    margin-bottom: 1rem;
+   }
+
+   .ct1-c1 h1 {
+       width: 60%;
+   }
+
+    .ct1-c1-content {
+        justify-content: space-around;
+    }
+
+    .ct1-c1 h1 {
+        font-size: 1.5rem;
+        display:inline-block
+    }
+
+    .image {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .ct1-c2 {
+        display:none;
+    } 
+
+    .ct1-c1 {
+        width:100%;
+        height:8vh;
+        margin-right:25%;
+    }
+
+    .m-dropdown {
+        display: none;
+    }
+
+    .ct1-c1 i {
+        font-size: 1.5rem;
+    }
+
+    .ct1-c1 h1 {
+        font-size:1.2rem;
+    }
+
+    .image {
+        width:50%;
+    }
+
+    .ct1-c1 i {
+        margin-bottom: 1rem;
+    }
+   
+}
+
+@media screen and (min-width:1000px){
+
+    .dropdown {
+        display:none !important;
+    }
+
+
+ 
 }
