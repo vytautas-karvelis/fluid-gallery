@@ -49,17 +49,9 @@
     font-size: 5vh;
 }
 
-.ct1-c1 .m-dropdown {
-  
-    text-align: center;
-    vertical-align: middle;
-
-}
-
 .ct1-c2 .fl {
     width:20%;
     height:100%;
-    border:2px solid green;        
 }
 
 .ct1-c2 .fl a {
@@ -211,6 +203,11 @@
     border:1px solid green;
 }
 
+.image h5 {
+    margin-top:5rem;
+    color:white;
+    display:none;
+}
 .sq:not(:last-child){
     margin-right:0.5rem;
 }
@@ -235,11 +232,15 @@
     background: white;
 }
 
+.image h1 {
+    color:white;
+}
+
 /* dopdown */
 
 .dropbtn {
     background-color: white;
-    color: white;
+    color: black;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -248,10 +249,6 @@
   
   .dropdown {    
     display: inline-block;
-    display: inline-block;
-    position: absolute;
-    right:-7rem;
-    top:1.6rem;
   }
   
   .dropdown-content {
@@ -287,16 +284,18 @@
 
     .ct1-c1 {
         width:100%;
-        height:100%;
-        margin-right:25%;
+        height:8vh;        
     }
 
    .ct1-c1 i {
-    margin-bottom: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-right: 5rem;
    }
 
    .ct1-c1 h1 {
-       width: 60%;
+       font-size: 1rem;
+       margin-right: 3rem;
    }
 
     .ct1-c1-content {
@@ -313,7 +312,7 @@
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (min-width:501px){
     .ct1-c2 {
         display:none;
     } 
@@ -324,8 +323,8 @@
         margin-right:25%;
     }
 
-    .m-dropdown {
-        display: none;
+    .dropdown {
+        margin-left:5rem;
     }
 
     .ct1-c1 i {
@@ -333,11 +332,11 @@
     }
 
     .ct1-c1 h1 {
-        font-size:1.2rem;
+        font-size:1.5rem;
     }
 
     .image {
-        width:50%;
+        width:50% !important;
     }
 
     .ct1-c1 i {
@@ -352,6 +351,24 @@
         display:none !important;
     }
 
+    .ct1-c1 {
+        margin:0;
+        width:50%;
+    }
 
- 
+    .ct1-c2 {
+        display: flex;
+    }
+
+    .image {
+        width:25% !important;
+    }
+
+    .ct1-c1 i {
+        font-size: 4rem;
+    }
+
+    .ct1-c1 h1 {
+        font-size: 2rem;
+    }
 }
